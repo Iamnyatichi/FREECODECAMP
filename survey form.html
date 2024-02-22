@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Land Surveying Registration Form</title>
+    <link href="survey form.css" rel="stylesheet">
+    </head>
+  <body>
+    <main>
+    <h1 id="title">Land Surveying Registration Form</h1>
+    <p id="description">Kindly take your time to fill this form about land services</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter Your Name" required/></label>
+        <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter Your Email" required/></label>
+        <label for="number" id="number-label">Number of Land Parcels: <input id="number" name="number" type="number" placeholder="Enter Your Land Parcels" min="1" max="10" required/></label>
+       </fieldset>
+       <fieldset>
+         <legend>What Best Describes Your Land? (Tick all that apply!!):</legend>
+         <label for="fertile"><input id="fertile" name="land-type" type="checkbox" value="fertile" class="inline"/>Fertile 1/4 acre</label>
+         <label for="loam"><input id="loam" name="land-type" type="checkbox" value="loam" class="inline"/>Loam Land</label>
+         <label for="barren"><input id="barren" name="land-type" type="checkbox" value="barren" class="inline"/>Barren Land</label>
+         <label for="arid"><input id="arid" name="land-type" type="checkbox" value="arid" class="inline"/>Arid Land</label>
+         <label for="semi-arid"><input id="semi-arid" name="land-type" type="checkbox" value="semi-arid" class="inline"/>Semi-Arid</label>
+         <label for="non-productive"><input id="non-productive" name="land-type" type="checkbox" value="non-productive" class="inline"/>Non-Productive Land</label>
+        </fieldset>
+        <fieldset>
+          <legend>What Are You Looking Forward For, From The Government?:</legend>
+          <label for="title-deed"><input id="title-deed" name="services" type="radio" class="inline" value="title-deed" checked/>Title-Deed</label>
+          <label for="land-subdivision"><input id="land-subdivision" name="services" type="radio" class="inline" value="land-subdivision" />Land Subdivision</label>
+          <label for="land-mapping"><input id="land-mapping" name="services" type="radio" class="inline" value="land-mapping" />Land Mapping</label>
+          <label for="land-allocation"><input id="land-allocation" name="services" type="radio" class="inline" value="land-mapping" />Land Allocation</label>
+       </fieldset>
+       <fieldset>
+         <label for="dropdown">How did you hear about this Land Registration Exercise?:
+           <select id="dropdown" name="public">
+             <option value="">(Choose one)</option>
+             <option value="1">Radio Advert</option>
+             <option value="2">Television Commercial</option>
+             <option value="3">Newspapers</option>
+             <option value="4">Billboard</option>
+             <option value="5">Chief's Cruisades</option>
+             <option value="6">Road Show</option>
+           </select>
+          </label>
+          <label for="opinon">What recommendations do you have:
+            <textarea id="opinion" name="opinion" rows="4" cols="35" placeholder="The Government should..."></textarea>
+          </label>
+        </fieldset>
+        <label for="consent"><input id="consent" type="checkbox" name="consent" value="checkbox" class="inline" required/>I agree the information provided can be used for government land development
+        </label>
+      <input id= "submit" type="submit" value="submit"/>
+    </form>
+  </main>
+  </body>
+</html>
